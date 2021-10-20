@@ -1,4 +1,3 @@
-import './style.css';
+import render from "./site-bones";
 
-
-console.log("loaded");
+render();
