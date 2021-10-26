@@ -3,10 +3,10 @@ function buildHome(){
     about.classList.add('about');    
 
     const kitchenImg = document.createElement('img');
-    kitchenImg.src = './images/kitchen.jpg'
+    kitchenImg.src = './images/kitchen.jpeg'
 
     const para = document.createElement('p');
-    para.textContent = "Tony Pepperoni's! Made fresh in our kitchen since 2003 BC"
+    para.textContent = "Tony Pepperoni's! Pizza fresh from our kitchen to your home!"
     about.appendChild(kitchenImg);
     about.appendChild(para);
 

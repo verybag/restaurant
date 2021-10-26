@@ -27,7 +27,7 @@ function buildNav(){
     const homeBtn = document.createElement('button');
     homeBtn.classList.add('button-nav');
     homeBtn.setAttribute('id', 'home-button');
-    homeBtn.textContent = "About me!";
+    homeBtn.textContent = "About us!";
     homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeBtn);
@@ -47,7 +47,7 @@ function buildNav(){
     const contactBtn = document.createElement('button');
     contactBtn.classList.add('button-nav');
     contactBtn.setAttribute('id', 'contact-button');
-    contactBtn.textContent = "Contact me!";
+    contactBtn.textContent = "Contact us!";
     contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactBtn);
@@ -88,6 +88,10 @@ function buildMain(){
 function buildFooter(){
     const footer = document.createElement('footer');
     footer.classList.add('footer');
+
+    const cr = document.createElement('p');
+    cr.textContent = "2021 | Michael DiSanto";
+    footer.appendChild(cr);
 
     return footer;
 }
